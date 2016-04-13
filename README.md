@@ -187,13 +187,13 @@ Common
 Unknown
 ```
 
-### Script Extension Names
+### Short Script Names
 
-You can extract all script extensions names from the gem like this:
+You can extract all 4 letter script names from the gem like this:
 
 ```ruby
 require "unicode/scripts"
-puts Unicode::Scripts.extension_names
+puts Unicode::Scripts.names(format: :short)
 
 # # # Output # # #
 
