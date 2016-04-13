@@ -6,6 +6,12 @@ Unicode version: **8.0.0**
 
 Supported Rubies: **2.3**, **2.2**, **2.1**
 
+## Gemfile
+
+```ruby
+gem "unicode-scripts"
+```
+
 ## Usage
 
 ```ruby
