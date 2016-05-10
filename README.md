@@ -334,6 +334,8 @@ Zyyy
 Zzzz
 ```
 
+See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related micro libraries.
+
 ## MIT License
 
 - Copyright (C) 2016 Jan Lelis <http://janlelis.com>. Released under the MIT license.
