@@ -2,7 +2,7 @@
 
 Retrieve the [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode%29) a string belongs to. Can also return the *Script_Extension* property which is defined as characters which are "commonly used with more than one script, but with a limited number of scripts".
 
-Unicode version: **8.0.0**
+Unicode version: **9.0.0**
 
 Supported Rubies: **2.3**, **2.2**, **2.1**
 
@@ -52,6 +52,7 @@ puts Unicode::Scripts.names
 
 # # # Output # # #
 
+Adlam
 Ahom
 Anatolian_Hieroglyphs
 Arabic
@@ -62,6 +63,7 @@ Bamum
 Bassa_Vah
 Batak
 Bengali
+Bhaiksuki
 Bopomofo
 Brahmi
 Braille
@@ -124,6 +126,7 @@ Mahajani
 Malayalam
 Mandaic
 Manichaean
+Marchen
 Meetei_Mayek
 Mende_Kikakui
 Meroitic_Cursive
@@ -136,6 +139,7 @@ Multani
 Myanmar
 Nabataean
 New_Tai_Lue
+Newa
 Nko
 Ogham
 Ol_Chiki
@@ -147,6 +151,7 @@ Old_Persian
 Old_South_Arabian
 Old_Turkic
 Oriya
+Osage
 Osmanya
 Pahawh_Hmong
 Palmyrene
@@ -174,6 +179,7 @@ Tai_Tham
 Tai_Viet
 Takri
 Tamil
+Tangut
 Telugu
 Thaana
 Thai
@@ -197,6 +203,7 @@ puts Unicode::Scripts.names(format: :short)
 
 # # # Output # # #
 
+Adlm
 Aghb
 Ahom
 Arab
@@ -208,6 +215,7 @@ Bamu
 Bass
 Batk
 Beng
+Bhks
 Bopo
 Brah
 Brai
@@ -266,6 +274,7 @@ Lydi
 Mahj
 Mand
 Mani
+Marc
 Mend
 Merc
 Mero
@@ -278,11 +287,13 @@ Mult
 Mymr
 Narb
 Nbat
+Newa
 Nkoo
 Ogam
 Olck
 Orkh
 Orya
+Osge
 Osma
 Palm
 Pauc
@@ -315,6 +326,7 @@ Takr
 Tale
 Talu
 Taml
+Tang
 Tavt
 Telu
 Tfng

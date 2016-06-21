@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.name          = "unicode-scripts"
   gem.version       = Unicode::Scripts::VERSION
   gem.summary       = "Which script(s) does a Unicode string belong to?"
-  gem.description   = "[Unicode version: #{Unicode::Scripts::UNICODE_VERSION}] Retrieve the Unicode script(s) a string belongs to. Can also return the Script_Extension property which is defined as characters which are 'commonly used with more than one script, but with a limited number of scripts'. "
+  gem.description   = "[Unicode #{Unicode::Scripts::UNICODE_VERSION}] Retrieve the Unicode script(s) a string belongs to. Can also return the Script_Extension property which is defined as characters which are 'commonly used with more than one script, but with a limited number of scripts'. "
   gem.authors       = ["Jan Lelis"]
   gem.email         = ["mail@janlelis.de"]
   gem.homepage      = "https://github.com/janlelis/unicode-scripts"
