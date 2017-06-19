@@ -2,9 +2,9 @@
 
 Retrieve the [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode%29) a string belongs to. Can also return the *Script_Extension* property which is defined as characters which are "commonly used with more than one script, but with a limited number of scripts".
 
-Unicode version: **9.0.0**
+Unicode version: **10.0.0**
 
-Supported Rubies: **2.3**, **2.2**, **2.1**
+Supported Rubies: **2.4**, **2.3**, **2.2**, **2.1**
 
 ## Gemfile
 
