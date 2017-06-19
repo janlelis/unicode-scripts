@@ -127,6 +127,7 @@ Malayalam
 Mandaic
 Manichaean
 Marchen
+Masaram_Gondi
 Meetei_Mayek
 Mende_Kikakui
 Meroitic_Cursive
@@ -141,6 +142,7 @@ Nabataean
 New_Tai_Lue
 Newa
 Nko
+Nushu
 Ogham
 Ol_Chiki
 Old_Hungarian
@@ -169,6 +171,7 @@ Siddham
 SignWriting
 Sinhala
 Sora_Sompeng
+Soyombo
 Sundanese
 Syloti_Nagri
 Syriac
@@ -191,6 +194,7 @@ Unknown
 Vai
 Warang_Citi
 Yi
+Zanabazar_Square
 ```
 
 ### Short Script Names
@@ -237,6 +241,7 @@ Elba
 Ethi
 Geor
 Glag
+Gonm
 Goth
 Gran
 Grek
@@ -289,6 +294,7 @@ Narb
 Nbat
 Newa
 Nkoo
+Nshu
 Ogam
 Olck
 Orkh
@@ -318,6 +324,7 @@ Sidd
 Sind
 Sinh
 Sora
+Soyo
 Sund
 Sylo
 Syrc
@@ -341,6 +348,7 @@ Wara
 Xpeo
 Xsux
 Yiii
+Zanb
 Zinh
 Zyyy
 Zzzz
