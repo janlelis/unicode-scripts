@@ -2,7 +2,7 @@
 
 Retrieve the [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode%29) a string belongs to. Can also return the *Script_Extension* property which is defined as characters which are "commonly used with more than one script, but with a limited number of scripts".
 
-Unicode version: **10.0.0**
+Unicode version: **11.0.0**
 
 Supported Rubies: **2.5**, **2.4**, **2.3**
 
@@ -28,11 +28,11 @@ Unicode::Scripts.scripts("СC", format: :short) # => ["Cyrl", "Latn"]
 Unicode::Scripts.script("ᴦ") # => "Greek"
 
 # Script_Extension property
-Unicode::Scripts.script_extensions("॥") # => ["Bengali", "Devanagari", "Grantha", "Gujarati",
-                                              "Gurmukhi", "Kannada", "Khudawadi", "Limbu",
-                                              "Mahajani", "Malayalam", "Oriya", "Sinhala",
-                                              "Syloti_Nagri", "Takri", "Tamil", "Telugu",
-                                              "Tirhuta"]
+Unicode::Scripts.script_extensions("॥")
+# => ["Bengali", "Devanagari", "Dogra", "Grantha", "Gujarati",
+"Gunjala_Gondi", "Gurmukhi", "Kannada", "Khudawadi", "Limbu",
+"Mahajani", "Malayalam", "Oriya", "Sinhala", "Syloti_Nagri",
+"Takri", "Tamil", "Telugu", "Tirhuta"]
 ```
 
 ## Hints
@@ -84,6 +84,7 @@ Cypriot
 Cyrillic
 Deseret
 Devanagari
+Dogra
 Duployan
 Egyptian_Hieroglyphs
 Elbasan
@@ -94,9 +95,11 @@ Gothic
 Grantha
 Greek
 Gujarati
+Gunjala_Gondi
 Gurmukhi
 Han
 Hangul
+Hanifi_Rohingya
 Hanunoo
 Hatran
 Hebrew
@@ -125,11 +128,13 @@ Lisu
 Lycian
 Lydian
 Mahajani
+Makasar
 Malayalam
 Mandaic
 Manichaean
 Marchen
 Masaram_Gondi
+Medefaidrin
 Meetei_Mayek
 Mende_Kikakui
 Meroitic_Cursive
@@ -152,6 +157,7 @@ Old_Italic
 Old_North_Arabian
 Old_Permic
 Old_Persian
+Old_Sogdian
 Old_South_Arabian
 Old_Turkic
 Oriya
@@ -172,6 +178,7 @@ Shavian
 Siddham
 SignWriting
 Sinhala
+Sogdian
 Sora_Sompeng
 Soyombo
 Sundanese
@@ -236,6 +243,7 @@ Copt
 Cprt
 Cyrl
 Deva
+Dogr
 Dsrt
 Dupl
 Egyp
@@ -243,6 +251,7 @@ Elba
 Ethi
 Geor
 Glag
+Gong
 Gonm
 Goth
 Gran
@@ -279,9 +288,11 @@ Lisu
 Lyci
 Lydi
 Mahj
+Maka
 Mand
 Mani
 Marc
+Medf
 Mend
 Merc
 Mero
@@ -315,6 +326,7 @@ Prti
 Qaac
 Qaai
 Rjng
+Rohg
 Runr
 Samr
 Sarb
@@ -325,6 +337,8 @@ Shrd
 Sidd
 Sind
 Sinh
+Sogd
+Sogo
 Sora
 Soyo
 Sund
@@ -360,5 +374,5 @@ See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related 
 
 ## MIT License
 
-- Copyright (C) 2016 Jan Lelis <http://janlelis.com>. Released under the MIT license.
+- Copyright (C) 2016-2018 Jan Lelis <http://janlelis.com>. Released under the MIT license.
 - Unicode data: http://www.unicode.org/copyright.html#Exhibit1
