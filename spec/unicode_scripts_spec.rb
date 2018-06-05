@@ -51,8 +51,10 @@ describe Unicode::Scripts do
       assert_equal [
         "Bengali",
         "Devanagari",
+        "Dogra",
         "Grantha",
         "Gujarati",
+        "Gunjala_Gondi",
         "Gurmukhi",
         "Kannada",
         "Khudawadi",
@@ -73,6 +75,8 @@ describe Unicode::Scripts do
       assert_equal [
         "Beng",
         "Deva",
+        "Dogr",
+        "Gong",
         "Gran",
         "Gujr",
         "Guru",
