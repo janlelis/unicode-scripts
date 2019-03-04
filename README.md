@@ -38,11 +38,13 @@ Unicode::Scripts.script_extensions("॥")
 ## Hints
 ### Regex Matching
 
-If you have a string and want to match a substring/character from a specific Unicode script, you actually won't need this gem. Instead, you can use the [Regexp Unicode Property Syntax `\p{}`](http://ruby-doc.org/core-2.3.0/Regexp.html#class-Regexp-label-Character+Properties):
+If you have a string and want to match a substring/character from a specific Unicode script, you actually won't need this gem. Instead, you can use the [Regexp Unicode Property Syntax `\p{}`](http://ruby-doc.org/core/Regexp.html#class-Regexp-label-Character+Properties):
 
 ```ruby
 "Coptic letter: ⲁ".scan(/\p{Coptic}/) # => ["ⲁ"]
 ```
+
+See [Idiosyncratic Ruby: Proper Unicoding](https://idiosyncratic-ruby.com/41-proper-unicoding.html) for more info.
 
 ### Script Names
 
