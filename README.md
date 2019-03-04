@@ -1,4 +1,4 @@
-# Unicode::Scripts [![[version]](https://badge.fury.io/rb/unicode-scripts.svg)](http://badge.fury.io/rb/unicode-scripts)  [![[travis]](https://travis-ci.org/janlelis/unicode-scripts.png)](https://travis-ci.org/janlelis/unicode-scripts)
+# Unicode::Scripts [![[version]](https://badge.fury.io/rb/unicode-scripts.svg)](https://badge.fury.io/rb/unicode-scripts)  [![[travis]](https://travis-ci.org/janlelis/unicode-scripts.png)](https://travis-ci.org/janlelis/unicode-scripts)
 
 Retrieve the [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode%29) a string belongs to. Can also return the *Script_Extension* property which is defined as characters which are "commonly used with more than one script, but with a limited number of scripts".
 
@@ -29,11 +29,13 @@ Unicode::Scripts.script("ᴦ") # => "Greek"
 
 # Script_Extension property
 Unicode::Scripts.script_extensions("॥")
-# => ["Bengali", "Devanagari", "Dogra", "Grantha", "Gujarati",
-"Gunjala_Gondi", "Gurmukhi", "Kannada", "Khudawadi", "Limbu",
-"Mahajani", "Malayalam", "Oriya", "Sinhala", "Syloti_Nagri",
-"Takri", "Tamil", "Telugu", "Tirhuta"]
+# => ["Bengali", "Devanagari", "Dogra", "Grantha", "Gujarati","Gunjala_Gondi", "Gurmukhi", "Kannada",
+"Khudawadi", "Limbu", "Mahajani", "Malayalam", "Masaram_Gondi", "Nandinagari", "Oriya", "Sinhala",
+"Syloti_Nagri", "Takri", "Tamil", "Telugu", "Tirhuta"]
 ```
+
+
+
 
 ## Hints
 ### Regex Matching
@@ -90,6 +92,7 @@ Dogra
 Duployan
 Egyptian_Hieroglyphs
 Elbasan
+Elymaic
 Ethiopic
 Georgian
 Glagolitic
@@ -148,10 +151,12 @@ Mro
 Multani
 Myanmar
 Nabataean
+Nandinagari
 New_Tai_Lue
 Newa
 Nko
 Nushu
+Nyiakeng_Puachue_Hmong
 Ogham
 Ol_Chiki
 Old_Hungarian
@@ -203,6 +208,7 @@ Tirhuta
 Ugaritic
 Unknown
 Vai
+Wancho
 Warang_Citi
 Yi
 Zanabazar_Square
@@ -250,6 +256,7 @@ Dsrt
 Dupl
 Egyp
 Elba
+Elym
 Ethi
 Geor
 Glag
@@ -268,6 +275,7 @@ Hebr
 Hira
 Hluw
 Hmng
+Hmnp
 Hrkt
 Hung
 Ital
@@ -305,6 +313,7 @@ Mroo
 Mtei
 Mult
 Mymr
+Nand
 Narb
 Nbat
 Newa
@@ -363,6 +372,7 @@ Tirh
 Ugar
 Vaii
 Wara
+Wcho
 Xpeo
 Xsux
 Yiii
