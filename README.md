@@ -2,7 +2,7 @@
 
 Retrieve the [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode%29) a string belongs to. Can also return the *Script_Extension* property which is defined as characters which are "commonly used with more than one script, but with a limited number of scripts".
 
-Unicode version: **12.1.0** (May 2019)
+Unicode version: **13.0.0** (March 2020)
 
 Supported Rubies: **2.7**, **2.6**, **2.5**, **2.4**
 
