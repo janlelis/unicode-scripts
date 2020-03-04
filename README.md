@@ -78,6 +78,7 @@ Caucasian_Albanian
 Chakma
 Cham
 Cherokee
+Chorasmian
 Common
 Coptic
 Cuneiform
@@ -85,6 +86,7 @@ Cypriot
 Cyrillic
 Deseret
 Devanagari
+Dives_Akuru
 Dogra
 Duployan
 Egyptian_Hieroglyphs
@@ -117,6 +119,7 @@ Katakana
 Katakana_Or_Hiragana
 Kayah_Li
 Kharoshthi
+Khitan_Small_Script
 Khmer
 Khojki
 Khudawadi
@@ -207,6 +210,7 @@ Unknown
 Vai
 Wancho
 Warang_Citi
+Yezidi
 Yi
 Zanabazar_Square
 ```
@@ -244,10 +248,12 @@ Cans
 Cari
 Cham
 Cher
+Chrs
 Copt
 Cprt
 Cyrl
 Deva
+Diak
 Dogr
 Dsrt
 Dupl
@@ -282,6 +288,7 @@ Kana
 Khar
 Khmr
 Khoj
+Kits
 Knda
 Kthi
 Lana
@@ -372,6 +379,7 @@ Wara
 Wcho
 Xpeo
 Xsux
+Yezi
 Yiii
 Zanb
 Zinh
@@ -384,4 +392,4 @@ See [unicode-x](https://github.com/janlelis/unicode-x) for more Unicode related 
 ## MIT License
 
 - Copyright (C) 2016-2020 Jan Lelis <https://janlelis.com>. Released under the MIT license.
-- Unicode data: http://www.unicode.org/copyright.html#Exhibit1
+- Unicode data: https://www.unicode.org/copyright.html#Exhibit1
