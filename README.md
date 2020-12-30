@@ -1,4 +1,4 @@
-# Unicode::Scripts [![[version]](https://badge.fury.io/rb/unicode-scripts.svg)](https://badge.fury.io/rb/unicode-scripts)  [![[travis]](https://travis-ci.org/janlelis/unicode-scripts.png)](https://travis-ci.org/janlelis/unicode-scripts)
+# Unicode::Scripts [![[version]](https://badge.fury.io/rb/unicode-scripts.svg)](https://badge.fury.io/rb/unicode-scripts)  [![[ci]](https://github.com/janlelis/unicode-scripts/workflows/Test/badge.svg)](https://github.com/janlelis/unicode-scripts/actions?query=workflow%3ATest)
 
 Retrieve the [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode%29) a string belongs to. Can also return the *Script_Extension* property which is defined as characters which are "commonly used with more than one script, but with a limited number of scripts".
 
