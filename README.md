@@ -4,9 +4,9 @@ Retrieve the [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode
 
 Unicode version: **13.0.0** (March 2020)
 
-Supported Rubies: **3.0**, **2.7**, **2.6**, **2.5**
+Supported Rubies: **3.0**, **2.7**
 
-Old Rubies that might still work: **2.4**, **2.3**, **2.2**, **2.1**, **2.0**
+Old Rubies that might still work: **2.6**, **2.5**, **2.4**, **2.3**, **2.2**, **2.1**, **2.0**
 
 ## Gemfile
 
