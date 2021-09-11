@@ -83,6 +83,7 @@ Common
 Coptic
 Cuneiform
 Cypriot
+Cypro_Minoan
 Cyrillic
 Deseret
 Devanagari
@@ -167,6 +168,7 @@ Old_Persian
 Old_Sogdian
 Old_South_Arabian
 Old_Turkic
+Old_Uyghur
 Oriya
 Osage
 Osmanya
@@ -198,6 +200,7 @@ Tai_Tham
 Tai_Viet
 Takri
 Tamil
+Tangsa
 Tangut
 Telugu
 Thaana
@@ -205,9 +208,11 @@ Thai
 Tibetan
 Tifinagh
 Tirhuta
+Toto
 Ugaritic
 Unknown
 Vai
+Vithkuqi
 Wancho
 Warang_Citi
 Yezidi
@@ -250,6 +255,7 @@ Cham
 Cher
 Chrs
 Copt
+Cpmn
 Cprt
 Cyrl
 Deva
@@ -329,6 +335,7 @@ Orkh
 Orya
 Osge
 Osma
+Ougr
 Palm
 Pauc
 Perm
@@ -373,8 +380,11 @@ Thaa
 Thai
 Tibt
 Tirh
+Tnsa
+Toto
 Ugar
 Vaii
+Vith
 Wara
 Wcho
 Xpeo
