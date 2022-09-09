@@ -118,6 +118,7 @@ Kaithi
 Kannada
 Katakana
 Katakana_Or_Hiragana
+Kawi
 Kayah_Li
 Kharoshthi
 Khitan_Small_Script
@@ -152,6 +153,7 @@ Mro
 Multani
 Myanmar
 Nabataean
+Nag_Mundari
 Nandinagari
 New_Tai_Lue
 Newa
@@ -291,6 +293,7 @@ Ital
 Java
 Kali
 Kana
+Kawi
 Khar
 Khmr
 Khoj
@@ -323,6 +326,7 @@ Mroo
 Mtei
 Mult
 Mymr
+Nagm
 Nand
 Narb
 Nbat
