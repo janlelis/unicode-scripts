@@ -16,19 +16,21 @@ describe Unicode::Scripts do
       assert_equal ["Cyrillic", "Latin"], Unicode::Scripts.of("AС")
     end
 
-    it "will call .script for every character" do
-      mocked_method = MiniTest::Mock.new
-      if RUBY_VERSION >= "2.7"
-        mocked_method.expect :call, "first script",  ["С"]
-        mocked_method.expect :call, "second script", ["A"]
-      else
-        mocked_method.expect :call, "first script",  ["С", {}]
-        mocked_method.expect :call, "second script", ["A", {}]
+    if RUBY_ENGINE != "jruby"
+      it "will call .script for every character" do
+        mocked_method = MiniTest::Mock.new
+        if RUBY_VERSION >= "2.7"
+          mocked_method.expect :call, "first script",  ["С"]
+          mocked_method.expect :call, "second script", ["A"]
+        else
+          mocked_method.expect :call, "first script",  ["С", {}]
+          mocked_method.expect :call, "second script", ["A", {}]
+        end
+        Unicode::Scripts.stub :script, mocked_method do
+          Unicode::Scripts.of("СA")
+        end
+        mocked_method.verify
       end
-      Unicode::Scripts.stub :script, mocked_method do
-        Unicode::Scripts.of("СA")
-      end
-      mocked_method.verify
     end
   end
 
@@ -110,13 +112,17 @@ describe Unicode::Scripts do
       assert_equal ["Cyrillic", "Latin"], Unicode::Scripts.script_extensions("AС")
     end
 
-    it "will call .scripts for characters that have no explicit script extension" do
-      mocked_method = MiniTest::Mock.new
-      mocked_method.expect :call, ["scripts"],  ["A", {format: :long}]
-      Unicode::Scripts.stub :scripts, mocked_method do
-        Unicode::Scripts.script_extensions("A")
+    if RUBY_VERSION >= "3.0" && RUBY_ENGINE != "jruby"
+      it "will call .scripts for characters that have no explicit script extension" do
+        mocked_method = MiniTest::Mock.new
+
+        mocked_method.expect(:call, ["scripts"], ["A"], format: :long)
+
+        Unicode::Scripts.stub :scripts, mocked_method do
+          Unicode::Scripts.script_extensions("A")
+        end
+        mocked_method.verify
       end
-      mocked_method.verify
     end
   end
 
