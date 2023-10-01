@@ -18,7 +18,7 @@ describe Unicode::Scripts do
 
     if RUBY_ENGINE != "jruby"
       it "will call .script for every character" do
-        mocked_method = MiniTest::Mock.new
+        mocked_method = Minitest::Mock.new
         if RUBY_VERSION >= "2.7"
           mocked_method.expect :call, "first script",  ["С"]
           mocked_method.expect :call, "second script", ["A"]
@@ -114,7 +114,7 @@ describe Unicode::Scripts do
 
     if RUBY_VERSION >= "3.0" && RUBY_ENGINE != "jruby"
       it "will call .scripts for characters that have no explicit script extension" do
-        mocked_method = MiniTest::Mock.new
+        mocked_method = Minitest::Mock.new
 
         mocked_method.expect(:call, ["scripts"], ["A"], format: :long)
 
