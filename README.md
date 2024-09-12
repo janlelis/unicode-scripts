@@ -29,9 +29,9 @@ Unicode::Scripts.script("ᴦ") # => "Greek"
 
 # Script_Extension property
 Unicode::Scripts.script_extensions("॥")
-# => ["Bengali", "Devanagari", "Dogra", "Grantha", "Gujarati","Gunjala_Gondi", "Gurmukhi", "Kannada",
-"Khudawadi", "Limbu", "Mahajani", "Malayalam", "Masaram_Gondi", "Nandinagari", "Oriya", "Sinhala",
-"Syloti_Nagri", "Takri", "Tamil", "Telugu", "Tirhuta"]
+# => ["Bengali", "Devanagari", "Dogra", "Grantha", "Gujarati", "Gunjala_Gondi", "Gurmukhi","Gurung_Khema",
+      "Kannada","Khudawadi",  "Limbu",  "Mahajani",  "Malayalam", "Masaram_Gondi", "Nandinagari", "Ol_Onal",
+      "Oriya", "Sinhala", "Syloti_Nagri", "Takri", "Tamil", "Telugu", "Tirhuta"]
 ```
 
 ## Hints
@@ -94,6 +94,7 @@ Egyptian_Hieroglyphs
 Elbasan
 Elymaic
 Ethiopic
+Garay
 Georgian
 Glagolitic
 Gothic
@@ -102,6 +103,7 @@ Greek
 Gujarati
 Gunjala_Gondi
 Gurmukhi
+Gurung_Khema
 Han
 Hangul
 Hanifi_Rohingya
@@ -125,6 +127,7 @@ Khitan_Small_Script
 Khmer
 Khojki
 Khudawadi
+Kirat_Rai
 Lao
 Latin
 Lepcha
@@ -162,6 +165,7 @@ Nushu
 Nyiakeng_Puachue_Hmong
 Ogham
 Ol_Chiki
+Ol_Onal
 Old_Hungarian
 Old_Italic
 Old_North_Arabian
@@ -193,6 +197,7 @@ Sogdian
 Sora_Sompeng
 Soyombo
 Sundanese
+Sunuwar
 Syloti_Nagri
 Syriac
 Tagalog
@@ -210,7 +215,9 @@ Thai
 Tibetan
 Tifinagh
 Tirhuta
+Todhri
 Toto
+Tulu_Tigalari
 Ugaritic
 Unknown
 Vai
@@ -223,7 +230,6 @@ Zanabazar_Square
 ```
 
 ### Short Script Names
-
 You can extract all 4 letter script names from the gem like this:
 
 ```ruby
@@ -269,6 +275,7 @@ Egyp
 Elba
 Elym
 Ethi
+Gara
 Geor
 Glag
 Gong
@@ -277,6 +284,7 @@ Goth
 Gran
 Grek
 Gujr
+Gukh
 Guru
 Hang
 Hani
@@ -299,6 +307,7 @@ Khmr
 Khoj
 Kits
 Knda
+Krai
 Kthi
 Lana
 Laoo
@@ -335,6 +344,7 @@ Nkoo
 Nshu
 Ogam
 Olck
+Onao
 Orkh
 Orya
 Osge
@@ -368,6 +378,7 @@ Sogo
 Sora
 Soyo
 Sund
+Sunu
 Sylo
 Syrc
 Tagb
@@ -385,7 +396,9 @@ Thai
 Tibt
 Tirh
 Tnsa
+Todr
 Toto
+Tutg
 Ugar
 Vaii
 Vith
