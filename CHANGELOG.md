@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### 1.11.0 (unreleased)
+
+- Add augmented scripts and mixed-script detection (as described in UTS39)
+
 ### 1.10.0
 
 - Unicode 16.0

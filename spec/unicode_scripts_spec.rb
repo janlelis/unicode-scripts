@@ -130,10 +130,60 @@ describe Unicode::Scripts do
     end
   end
 
+  describe ".augmented_scripts" do
+    it "will always return an Array" do
+      assert_equal [], Unicode::Scripts.augmented_scripts("")
+    end
+
+    it "will return all extended scripts that characters in the string belong to + augmented" do
+      assert_equal ["Hira", "Jpan", "Kana"], Unicode::Scripts.augmented_scripts("ねガ")
+    end
+    
+    it "will replace Common with all scripts" do
+      assert_equal \
+        Unicode::Scripts.names(format: :short, augmented: :include),
+        Unicode::Scripts.augmented_scripts("1")
+    end
+  end
+
+  describe ".resolved_scripts" do
+    it "return intersection of augmented scripts per character" do
+      assert_equal ["Cyrl"], Unicode::Scripts.resolved_scripts("СігсӀе")
+      assert_equal [], Unicode::Scripts.resolved_scripts("Сirсlе")
+      assert_equal \
+        Unicode::Scripts.names(format: :short, augmented: :include),
+        Unicode::Scripts.resolved_scripts("𝖢𝗂𝗋𝖼𝗅𝖾")
+    end
+  end
+
+  describe "mixed?" do
+    it "will return true if .resolved_scripts(string) is empty" do
+      assert_equal false, Unicode::Scripts.mixed?("СігсӀе")
+      assert Unicode::Scripts.mixed?("Сirсlе")
+      assert_equal false, Unicode::Scripts.mixed?("𝖢𝗂𝗋𝖼𝗅𝖾")
+      assert_equal false, Unicode::Scripts.mixed?("1")
+      assert_equal false, Unicode::Scripts.mixed?("ねガ")
+    end
+  end
+  
+  describe "single?" do
+    it "will return true if .resolved_scripts(string) is not empty" do
+      assert Unicode::Scripts.single?("СігсӀе")
+      assert_equal false, Unicode::Scripts.single?("Сirсlе")
+      assert Unicode::Scripts.single?("𝖢𝗂𝗋𝖼𝗅𝖾")
+      assert Unicode::Scripts.single?("1")
+      assert Unicode::Scripts.single?("ねガ")
+    end
+  end
+
   describe ".names" do
     it "will return a list of all script names" do
       assert_kind_of Array, Unicode::Scripts.names
       assert_includes Unicode::Scripts.names, "Inscriptional_Parthian"
+    end
+
+    it "will return a list of all augmented script codes" do
+      assert_equal Unicode::Scripts.names(format: :short, augmented: :only), ["Hanb", "Jpan", "Kore"]
     end
   end
 end
