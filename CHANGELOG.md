@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### 1.11.0 (unreleased)
+### 1.11.0
 
 - Add augmented scripts and mixed-script detection (as described in UTS39)
 
