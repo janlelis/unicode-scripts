@@ -4,7 +4,7 @@ Retrieve all [Unicode script(s)](https://en.wikipedia.org/wiki/Script_%28Unicode
 
 Based on the *Script_Extension*, this library can also return the [augmented script set](https://www.unicode.org/reports/tr39/#def-augmented-script-set) to figure out if a string is **mixed-script** or **single-script**. Mixed scripts can be an indicator of suspicious user inputs.
 
-Unicode version: **16.0.0** (September 2024)
+Unicode version: **17.0.0** (September 2025)
 
 Supported Rubies: **3.x** (might work: **2.x**)
 
