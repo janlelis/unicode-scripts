@@ -128,5 +128,5 @@ See [Idiosyncratic Ruby: Proper Unicoding](https://idiosyncratic-ruby.com/41-pro
 
 ## MIT License
 
-- Copyright (C) 2016-2024 Jan Lelis <https://janlelis.com>. Released under the MIT license.
+- Copyright (C) 2016-2025 Jan Lelis <https://janlelis.com>. Released under the MIT license.
 - Unicode data: https://www.unicode.org/copyright.html#Exhibit1
