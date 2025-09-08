@@ -186,5 +186,11 @@ describe Unicode::Scripts do
       assert_equal Unicode::Scripts.names(format: :short, augmented: :only), ["Hanb", "Jpan", "Kore"]
     end
   end
+
+  describe '[unicode versions]' do
+    it "works for scripts introduced in Unicode 17" do
+      assert_equal "Tai_Yo", Unicode::Scripts.script("𞛀")
+    end
+  end
 end
 
