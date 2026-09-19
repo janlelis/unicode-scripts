@@ -6,8 +6,6 @@ Based on the *Script_Extension*, this library can also return the [augmented scr
 
 Unicode version: **18.0.0** (September 2026)
 
-Supported Rubies: **3.x** (might work: **2.x**)
-
 ## Gemfile
 
 ```ruby
