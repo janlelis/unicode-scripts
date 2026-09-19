@@ -3,6 +3,7 @@
 ### 1.13.0 (unreleased)
 
 - Unicode 18.0
+- Adapt augmented script set (and therefor mixed/single script detection) to Unicode 18 (-> add Hntl)
 
 ### 1.12.0
 

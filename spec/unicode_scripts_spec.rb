@@ -139,7 +139,15 @@ describe Unicode::Scripts do
     it "will return all extended scripts that characters in the string belong to + augmented" do
       assert_equal ["Hira", "Jpan", "Kana"], Unicode::Scripts.augmented_scripts("ねガ")
     end
-    
+
+    it "add all Unicode::Scripts::AUGMENTED_SCRIPT_CODES for Han characters" do
+      assert_equal ["Hanb", "Hani", "Hntl", "Jpan", "Kore"], Unicode::Scripts.augmented_scripts("⺀")
+    end
+
+    it "add Hntl for Latin characters" do
+      assert_equal ["Hntl", "Latn"], Unicode::Scripts.augmented_scripts("A")
+    end
+   
     it "will replace Common with all scripts" do
       assert_equal \
         Unicode::Scripts.names(format: :short, augmented: :include),
@@ -184,7 +192,7 @@ describe Unicode::Scripts do
     end
 
     it "will return a list of all augmented script codes" do
-      assert_equal Unicode::Scripts.names(format: :short, augmented: :only), ["Hanb", "Jpan", "Kore"]
+      assert_equal Unicode::Scripts.names(format: :short, augmented: :only), ["Hanb", "Hntl", "Jpan", "Kore"]
     end
   end
 

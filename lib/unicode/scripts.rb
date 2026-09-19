@@ -62,7 +62,7 @@ module Unicode
       }
 
       if augmented.include? "Hani"
-        augmented |= ["Hanb", "Jpan", "Kore"]
+        augmented |= Unicode::Scripts::AUGMENTED_SCRIPT_CODES
       end
       if augmented.include?("Hira") || augmented.include?("Kana")
         augmented |= ["Jpan"]
@@ -72,6 +72,9 @@ module Unicode
       end
       if augmented.include? "Bopo"
         augmented |= ["Hanb"]
+      end
+      if augmented.include? "Latn"
+        augmented |= ["Hntl"]
       end
       if augmented.include?("Zyyy") || augmented.include?("Zinh")
         augmented |= names(format: :short, augmented: :include )

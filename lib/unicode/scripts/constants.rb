@@ -7,6 +7,6 @@ module Unicode
     DATA_DIRECTORY = File.expand_path(File.dirname(__FILE__) + "/../../../data/").freeze
     INDEX_FILENAME = (DATA_DIRECTORY + "/scripts.marshal.gz").freeze
 
-    AUGMENTED_SCRIPT_CODES = ["Hanb", "Jpan", "Kore"]
+    AUGMENTED_SCRIPT_CODES = ["Hanb", "Hntl",  "Jpan", "Kore"]
   end
 end
