@@ -189,6 +189,10 @@ describe Unicode::Scripts do
   end
 
   describe '[unicode versions]' do
+    it "works for scripts introduced in Unicode 18" do
+      assert_equal "Jurchen", Unicode::Scripts.script("\u{18E20}")
+    end
+
     it "works for scripts introduced in Unicode 17" do
       assert_equal "Tai_Yo", Unicode::Scripts.script("𞛀")
     end
