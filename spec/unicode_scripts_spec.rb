@@ -1,4 +1,5 @@
 require_relative "../lib/unicode/scripts"
+require "minitest/mock"
 require "minitest/autorun"
 
 describe Unicode::Scripts do
